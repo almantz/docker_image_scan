@@ -34,7 +34,7 @@ jobs:
         with:
           command: cves,recommendations,compare,sbom
           image: ${{ github.event.inputs.docker_image }}
-          # only-severities: critical,high
+          only-severities: critical,high
           # only-fixed: true # Filter to fixed CVEs
           exit-code: false
           sarif-file: sca_scout.sarif
